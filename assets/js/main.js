@@ -1,5 +1,4 @@
 $(function() {
-
     $('.header__slider').slick({
         infinite: true,
         fade: true,
@@ -27,6 +26,4 @@ $(function() {
         asNavFor: '.surf-slider', //связать слайдеры
         focusOnSelect: true,
     })
-
-
 });
