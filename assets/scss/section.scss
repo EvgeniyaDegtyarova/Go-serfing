@@ -1,0 +1,169 @@
+            .title {
+                span {
+                    color: rgba(#fff, .02);
+                    font-weight: 800;
+                    line-height: 156px;
+                    position: relative;
+                    transform: translateX(-50px);
+                    display: inline-block;
+                    font-size: 200px;
+                }
+                h3 {
+                    margin: 0;
+                    color: #fff;
+                    font-size: 80px;
+                    position: absolute;
+                    top: 0;
+                    right: -5px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 80px;
+                        height: 1px;
+                        background-color: $green;
+                    }
+                }
+            }
+            
+            .subtitle {
+                display: inline-block;
+                text-align: right;
+                &__head {
+                    font-weight: 800;
+                    font-size: 40px;
+                    padding-right: 10px;
+                    span {
+                        font-weight: 300;
+                    }
+                }
+            }
+            
+            .surf {
+                padding: 160px 0 120px;
+                background-image: url(../img/POI.png);
+                background-position: right 200px;
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+            
+            .surf__subtitle {
+                text-align: right;
+                padding-right: 80px;
+                margin-top: -86px;
+            }
+            
+            .surf-slider {
+                padding-top: 110px;
+                .slider-arrows {
+                    top: 50px;
+                    opacity: 0.25;
+                }
+                //для каждого 4 го начиная с 1 го и с 3го соотвесвенно
+                //геометричность
+                .slick-slide:nth-child(4n + 1) {
+                    .surf-box {
+                        margin-top: 32px;
+                    }
+                }
+                .slick-slide:nth-child(4n + 3) {
+                    .surf-box {
+                        margin-top: 89px;
+                    }
+                }
+                //кнопка и заливка слайда
+                .slick-current {
+                    .surf-box__inner-btn {
+                        display: block;
+                    }
+                    .surf-box__inner {
+                        background: rgba(#1c2121, 0.3);
+                    }
+                }
+            }
+            
+            .surf-box {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                &__inner {
+                    min-height: 750px;
+                    background: rgba(#1c2121, 0.85);
+                    position: relative;
+                    top: 0;
+                    bottom: 0;
+                    transition: all 0.5s;
+                    &:hover {
+                        background: rgba(#1c2121, 0.3);
+                        .surf-box__inner-btn {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            
+            .surf-box__inner-title {
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 36px;
+                padding: 72px 0 40px;
+                width: 140px;
+            }
+            
+            .surf-box__inner-location {
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 8px;
+                transform: rotate(-90deg);
+                position: absolute;
+                left: 40px;
+                bottom: 80px;
+                white-space: nowrap; //для отмены переноса
+                width: 0;
+                height: 0;
+                span {
+                    font-weight: 100;
+                }
+            }
+            
+            .surf-box__inner-btn {
+                bottom: 0;
+                position: absolute;
+                text-align: center;
+                left: 0;
+                right: 0;
+                display: none;
+            }
+            
+            .btn {
+                font-size: 40px;
+                line-height: 36px;
+                font-weight: 800;
+                span {
+                    padding: 17px 57px 15px 17px;
+                    background-color: $green;
+                    display: inline-block;
+                    margin-left: 19px;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 1px;
+                        background-color: #fff;
+                        top: 50%;
+                        left: -10px;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 25px;
+                        height: 21px;
+                        background-image: url(../img/arrows-right.svg);
+                        top: 50%;
+                        right: 17px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }

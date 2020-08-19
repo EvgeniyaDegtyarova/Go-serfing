@@ -80,6 +80,7 @@
             font-weight: 500;
             padding-top: 6px;
             margin-bottom: 37px;
+            text-transform: capitalize;
         }
     }
 }
@@ -111,11 +112,38 @@
     font-weight: 300;
     position: relative;
     padding-left: 19px;
+    text-transform: capitalize;
      ::before {
         content: "";
         position: absolute;
         width: 11px;
         height: 13px;
         background-image: url(../img/Path.png);
+    }
+}
+
+.header__map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.header__arrows {
+    position: absolute;
+    left: 210px;
+    bottom: 40px;
+    z-index: 3;
+}
+
+.line-animation {
+    stroke-dashoffset: 600;
+    // stroke-dasharray: 600;
+    animation: animdash 3s infinite 6s;
+}
+
+@keyframes animdash {
+    to {
+        stroke-dasharray: 600;
     }
 }
