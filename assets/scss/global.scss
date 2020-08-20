@@ -59,6 +59,28 @@
             }
         }
         
+        .headline-right {
+            font-size: 22px;
+            line-height: 32px;
+            letter-spacing: 7.33333px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            padding-right: 103px;
+            position: relative;
+            display: inline-block;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 80px;
+                height: 1px;
+                background-color: #fff;
+                right: 0;
+                top: 50%;
+            }
+        }
+        
         .slider-arrows {
             position: absolute;
             top: 40px;
@@ -102,4 +124,13 @@
                 font-weight: 300;
                 line-height: 19px;
             }
+        }
+        
+        .surf,
+        .travel {
+            padding: 160px 0 120px;
+        }
+        
+        .travel {
+            padding-bottom: 265px;
         }
