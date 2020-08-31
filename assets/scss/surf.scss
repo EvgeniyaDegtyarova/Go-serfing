@@ -1,5 +1,5 @@
             .title {
-                span {
+                div {
                     color: rgba(#fff, .02);
                     font-weight: 800;
                     line-height: 156px;
@@ -7,6 +7,9 @@
                     transform: translateX(-50px);
                     display: inline-block;
                     font-size: 200px;
+                }
+                span {
+                    display: inline-block;
                 }
                 h3 {
                     margin: 0;
@@ -83,9 +86,12 @@
             }
             
             .surf-box {
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
+                //перенесли так какдобавили класс
+                &__wrapper {
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
                 &__inner {
                     min-height: 750px;
                     background: rgba(#1c2121, 0.85);

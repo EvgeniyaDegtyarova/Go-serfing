@@ -18,6 +18,7 @@
     "sort-css-media-queries": "^1.4.3"
   },
   "dependencies": {
-    "slick-slider": "^1.8.2"
+    "slick-slider": "^1.8.2",
+    "wow.js": "^1.2.2"
   }
 }
